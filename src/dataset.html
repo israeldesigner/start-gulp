@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Dados abertos</title>
+    <!-- <base href="/"> -->
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/vendor/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="css/vendor/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/vendor/icofont.min.css" />
+    <link rel="stylesheet" href="css/vendor/ico-custom.min.css"  />
+    <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body class="">
+
+    <header class="account-masthead">
+        <div class="container">
+        </div>
+     </header>
+     <!-- pesquisa  -->
+     <div class="search-area">
+        <div class="container">
+           <div class="search-input">
+              <div class="search-close">
+                 <i class="icofont-close-squared-alt"></i>
+              </div>
+              <form role="search" action="/dataset/" method="get">
+                 <input type="text" name="text" class="form-control" placeholder="Pesquisar dados" name="q" placeholder="Pesquisar">
+                 <button class="search-btn" type="submit">
+                 <span class="serch-icon">
+                 <i class="icon-magnifier icons"></i>
+                 </span>
+                 </button>
+              </form>
+           </div>
+        </div>
+     </div>
+     <!-- pesquisa  -->
+     <style>
+        .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
+        font-size: smaller;
+        color: #151b1e;
+        }
+     </style>
+     <!-- Mobile menu -->
+     <div class="mobile-menu crypto-bg ">
+        <nav class="mobile-header d-flex justify-content-between">
+           <div class="header-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+           </div>
+           <div class="header-logo">
+              <a href="" rel=""><img src="assets/images/logo-dado.png" width="170" alt="Dados-abertos"></a>
+           </div>
+           <div class="search">
+              <i class="icon-magnifier icons text-white"></i>
+           </div>
+        </nav>
+        <nav class="mobile-menu">
+           <div class="mobile-menu-area">
+              <div class="mobile-menu-area-inner">
+                 <a href="/" rel="">
+                 <img src="assets/images/logo.png" alt="logo citinova" width="130">
+                 </a>
+                 <ul>
+                    <li>
+                       <a href="#">Home</a>
+                       <ul>
+                          <li class="active"><a href="/">Home</a></li>
+                          <li><a href="index-host.html">Sobre</a></li>
+                          <li><a href="index-erp.html">Conjunto de dados</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Sobre</a>
+                       <ul>
+                          <li><a href="about.html">Sobre</a></li>
+                          <li>
+                             <a href="#">Services</a>
+                             <ul>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="service-single.html">Service Single</a></li>
+                             </ul>
+                          </li>
+                          <li><a href="#">Team Member</a>
+                          </li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Conjunto de dados</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Grupos</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Dúvidas</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Contato</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li class="mt-3"><button class="btn btn-pink btn-block">Entrar</button></li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </div>
+     <!-- Mobile Menu -->
+     <section class="app-menu d-none d-lg-block bg-gray-100">
+        <!--acessibilidade-->
+        <div class="app-acessibilidade">
+           <div class="container-fluid">
+              <div class="row align-items-center">
+                 <div class="col-sm-6  col-12 app-acessibilidadeMenu">
+                    <a class="scroll mr-1" href="#main-central"             data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 1"
+                       data-original-title="alt + 1"  accesskey="1"> Conteúdo Central |</a>
+                    <a class="scroll mr-1" href="#navMenu"                  data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 2"
+                       data-original-title="alt + 2"  accesskey="2"> Menu |</a>
+                    <a class="scroll mr-1" href="#search"                   data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 3"
+                       data-original-title="alt + 3" accesskey="3"> Busca  |</a>
+                    <a class="scroll mr-1" href="#footer"                   data-toggle="tooltip"                                                                                                  data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 4"
+                       data-original-title="alt + 4" accesskey="4"> Rodapé </a>
+                    <a href="https://vlibras.gov.br/" target="_blank" class="ml-3 mr-1" rel="noreferrer">
+                    <i class="fa fa-deaf text-gray-700" aria-hidden="true"></i>
+                    </a>
+                    <a href="./acessibilidade" class="mr-1"><i class="fa d-inline fa-wheelchair text-gray-700"></i></a>
+                    <a href="#altocontraste" id="altocontraste" class="colorContrast mr-1 text-gray-700"
+                       onclick="window.toggleContrast()">
+                    <i class="fa d-inline fa-adjust text-blue text-gray-700"></i></a>
+                    <a href="javascript:window.toggleFont('-')" class="mr-1 text-gray-700">A-</a>
+                    <a href="javascript:window.toggleFont('=')" class="mr-1 text-gray-700">A</a>
+                    <a href="javascript:window.toggleFont('+')" class="mr-1 text-gray-700">A+</a>
+                 </div>
+                 <div class="col-sm-6  col-12 app-acessibilidadeItens">
+                    <ul class="menu mb-0">
+                       <li class="nav-item">
+                          <a href="https://acessoainformacao.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Acesso a informação</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="https://transparencia.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Transparência</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Serviços</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Legislação</a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!--/acessibilidade-->
+     </section>
+     <!-- menu desktop -->
+     <header id="header"class="header-section crypto bg-main">
+        <div class="header-area">
+           <div class="container">
+              <div class="primary-menu">
+                 <div class="logo align-items-center">
+                    <a href="/" rel="" target="_blank">
+                    <img src="/base/assets/images/logo-citinovaNova.png" alt="Prefeitura de fortaleza" width="185">
+                    </a>
+                    <a href="/">
+                    <img src="/base/assets/images/dados.png" alt="dados abertos" width="120">
+                    </a>
+                 </div>
+                 <nav id="navMenu" class="main-area">
+                    <div class="main-menu">
+                       <ul>
+                          <li>
+                             <a class="active" href="/">Home</a>
+                          </li>
+                          <li>
+                             <a href="/about">Sobre</a>
+                          </li>
+                          <li>
+                             <a href="/dataset/">Conjunto de dados</a>
+                          </li>
+                          <li>
+                             <a href="/group/" onclick="window.location='/group/'">Grupos</a>
+                             <ul>
+                                <li><a href="/group/cultura">Cultura</a></li>
+                                <li><a href="/group/demografia">Demografia</a></li>
+                                <li><a href="/group/economia">Economia</a></li>
+                                <li><a href="/group/educacao">Educação</a></li>
+                                <li><a href="/group/esportes">Esportes</a></li>
+                                <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
+                                <li><a href="/group/habitacao">Habitação</a></li>
+                                <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
+                                <li><a href="/group/saude">Saúde</a></li>
+                                <li><a href="/group/seguranca">Segurança</a></li>
+                                <li><a href="/group/transporte">Transporte</a></li>
+                                <li><a href="/group/turismo">Turismo</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                             <a href="/organization/">Organizações</a>
+                          </li>
+                          <li>
+                             <a href="#">Ajuda</a>
+                             <ul>
+                                <li><a href="/contato">Fale conosco</a></li>
+                                <li><a href="/faq">Dúvidas frequentes</a></li>
+                                <li><a href="/manuais">Manuais e vídeos</a></li>
+                             </ul>
+                          </li>
+                       </ul>
+                    </div>
+                    <div style="border-right: 1px solid #ffffff; width: 2px; height: 28px;"></div>
+                    <div class="header-right d-flex justify-content-end">
+                       <div class="main-menu">
+                          <ul>
+                             <li class="search">
+                                <a href="#"><i class="icon-magnifier icons font-2xl"></i></a>
+                             </li>
+                             <li>
+                                <a href="/user/adm-ckan" onclick="window.location='/user/adm-ckan'" title="Visualizar Perfil"><img src="//gravatar.com/avatar/fe5a0b1ac1396d6382e7e1331a748696?s=22&amp;d=identicon"
+                                   class="user-image" width="22" height="22" alt="Gravatar" /></a>
+                                <ul>
+                                   <li>
+                                      <a href="/dashboard/" title="Painel de Controle (0 novo item)">
+                                      Painel
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="/user/edit/adm-ckan" title="Edit settings">
+                                      Settings
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="/user/_logout" title="Sair">
+                                      Sair
+                                      </a>
+                                   </li>
+                                </ul>
+                             </li>
+                          </ul>
+                       </div>
+                    </div>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </header>
+     <!-- Menu desktop -->
+     <section class="breadCrumb container mt-3">
+        <div class="toolbar">
+           <nav class="breadcrumb">
+              <!-- Snippet snippets/home_breadcrumb_item.html start -->
+              <li class="home">
+                 <a href="/" aria-label="Início"><i class="fa fa-home"></i><span></span></a>
+              </li>
+              <!-- Snippet snippets/home_breadcrumb_item.html end -->
+              <span class="breadcrumb-item active">
+              <li class="active"><a href="/dataset/">Conjuntos de dados</a></li>
+           </nav>
+        </div>
+     </section>
+     <div class="main">
+        <section class="service-single mt-5">
+           <div id="content" class="container">
+              <div class="flash-messages">
+              </div>
+              <div class="row wrapper">
+                 <aside class="secondary col-sm-3">
+                    <div class="filters">
+                       <div>
+                          <!-- Snippet snippets/facet_list.html start -->
+                          <!--<section class="module module-narrow module-shallow">
+                             -->
+                          <div class="service-tab card p-2">
+                             <h5>
+                                Organizações
+                             </h5>
+                             <!--
+                                <h2 class="module-heading">
+                                  <i class="fa fa-filter"></i>
+                                  
+                                  Organizações
+                                </h2>-->
+                             <ul class="tab-menu ml-0" id="grupos">
+                                <!--<ul class="list-unstyled nav nav-simple nav-facet">
+                                   -->
+                                <li class="nav-item">
+                                   <a href="/dataset/?organization=citinova" title="">
+                                      <span class="item-label">Citinova(4)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">4</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?organization=teste-novidade" title="Fundação Teste alguma coisa ">
+                                      <span class="item-label">Fundação Teste algu...(2)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">2</span>
+                                         -->
+                                   </a>
+                                </li>
+                             </ul>
+                             <p class="module-footer">
+                             </p>
+                             <!--</section>-->
+                          </div>
+                          <!-- Snippet snippets/facet_list.html end -->
+                          <!-- Snippet snippets/facet_list.html start -->
+                          <!--<section class="module module-narrow module-shallow">
+                             -->
+                          <div class="service-tab card p-2">
+                             <h5>
+                                Grupos
+                             </h5>
+                             <!--
+                                <h2 class="module-heading">
+                                  <i class="fa fa-filter"></i>
+                                  
+                                  Grupos
+                                </h2>-->
+                             <ul class="tab-menu ml-0" id="grupos">
+                                <!--<ul class="list-unstyled nav nav-simple nav-facet">
+                                   -->
+                                <li class="nav-item">
+                                   <a href="/dataset/?groups=cultura" title="">
+                                      <span class="item-label">Cultura(2)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">2</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?groups=esportes" title="">
+                                      <span class="item-label">Esportes(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?groups=planejamentoegestao" title="">
+                                      <span class="item-label">Gestão Pública(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                             </ul>
+                             <p class="module-footer">
+                             </p>
+                             <!--</section>-->
+                          </div>
+                          <!-- Snippet snippets/facet_list.html end -->
+                          <!-- Snippet snippets/facet_list.html start -->
+                          <!--<section class="module module-narrow module-shallow">
+                             -->
+                          <div class="service-tab card p-2">
+                             <h5>
+                                Etiquetas
+                             </h5>
+                             <!--
+                                <h2 class="module-heading">
+                                  <i class="fa fa-filter"></i>
+                                  
+                                  Etiquetas
+                                </h2>-->
+                             <ul class="tab-menu ml-0" id="grupos">
+                                <!--<ul class="list-unstyled nav nav-simple nav-facet">
+                                   -->
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=teste" title="">
+                                      <span class="item-label">teste(4)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">4</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=cear%C3%A1" title="">
+                                      <span class="item-label">ceará(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=dados" title="">
+                                      <span class="item-label">dados(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=fortaleza" title="">
+                                      <span class="item-label">fortaleza(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=internet" title="">
+                                      <span class="item-label">internet(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=mudan%C3%A7a" title="">
+                                      <span class="item-label">mudança(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=novo" title="">
+                                      <span class="item-label">novo(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=tecnologia" title="">
+                                      <span class="item-label">tecnologia(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?tags=wi-fi" title="">
+                                      <span class="item-label">wi-fi(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                             </ul>
+                             <p class="module-footer">
+                             </p>
+                             <!--</section>-->
+                          </div>
+                          <!-- Snippet snippets/facet_list.html end -->
+                          <!-- Snippet snippets/facet_list.html start -->
+                          <!--<section class="module module-narrow module-shallow">
+                             -->
+                          <div class="service-tab card p-2">
+                             <h5>
+                                Formatos
+                             </h5>
+                             <!--
+                                <h2 class="module-heading">
+                                  <i class="fa fa-filter"></i>
+                                  
+                                  Formatos
+                                </h2>-->
+                             <ul class="tab-menu ml-0" id="grupos">
+                                <!--<ul class="list-unstyled nav nav-simple nav-facet">
+                                   -->
+                                <li class="nav-item">
+                                   <a href="/dataset/?res_format=PDF" title="">
+                                      <span class="item-label">PDF(2)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">2</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?res_format=DOCX" title="">
+                                      <span class="item-label">DOCX(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?res_format=JSON" title="">
+                                      <span class="item-label">JSON(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?res_format=SVG" title="">
+                                      <span class="item-label">SVG(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?res_format=TXT" title="">
+                                      <span class="item-label">TXT(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                             </ul>
+                             <p class="module-footer">
+                             </p>
+                             <!--</section>-->
+                          </div>
+                          <!-- Snippet snippets/facet_list.html end -->
+                          <!-- Snippet snippets/facet_list.html start -->
+                          <!--<section class="module module-narrow module-shallow">
+                             -->
+                          <div class="service-tab card p-2">
+                             <h5>
+                                Licenças
+                             </h5>
+                             <!--
+                                <h2 class="module-heading">
+                                  <i class="fa fa-filter"></i>
+                                  
+                                  Licenças
+                                </h2>-->
+                             <ul class="tab-menu ml-0" id="grupos">
+                                <!--<ul class="list-unstyled nav nav-simple nav-facet">
+                                   -->
+                                <li class="nav-item">
+                                   <a href="/dataset/?license_id=cc-zero" title="Creative Commons CCZero">
+                                      <span class="item-label">Creative Commons CC...(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?license_id=gfdl" title="Licença GNU para Documentação Livre">
+                                      <span class="item-label">Licença GNU para Do...(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                                <li class="nav-item">
+                                   <a href="/dataset/?license_id=other-closed" title="">
+                                      <span class="item-label">Outra (Não Aberta)(1)</span>
+                                      <!--<span class="hidden separator"> - </span>
+                                         <span class="item-count badge">1</span>
+                                         -->
+                                   </a>
+                                </li>
+                             </ul>
+                             <p class="module-footer">
+                             </p>
+                             <!--</section>-->
+                          </div>
+                          <!-- Snippet snippets/facet_list.html end -->
+                       </div>
+                    </div>
+                 </aside>
+                 <div class="primary col-sm-9 col-xs-12">
+                    <section class="module">
+                       <div class="module-content">
+                          <div class="page_primary_action" style="padding-bottom: 10px;">
+                             <!-- Snippet snippets/add_dataset.html start -->
+                             <a class="btn btn-primary font-white" href="/dataset/new"><i class="fa fa-plus-square"></i> Adicionar Conjunto de Dados</a>
+                             <!-- Snippet snippets/add_dataset.html end -->
+                          </div>
+                          <!-- Snippet snippets/search_form.html start -->
+                          <!-- filtro search-->
+                          <form id="dataset-search-form" class="search-form" method="get" data-module="select-switch">
+                             <div class="form-group row">
+                                <div class="col-12">
+                                   <div class="input-group">
+                                      <span class="input-group-prepend">
+                                      <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                      </span>
+                                      <!--<input type="text" id="input1-group2" name="input1-group2" class="form-control"
+                                         placeholder="Filtre sua pesquisa">-->
+                                      <input aria-label="Search datasets..."
+                                         id="field-giant-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="Search datasets...">
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-sm-6 col-12">
+                                   <p class="mt-1 font-bold" style="font-size: x-large; text-decoration: underline;">6 resultados encontrados</p>
+                                </div>
+                                <div class="text-right col-sm-6 col-12">
+                                   <!-- <div class="form-group row">
+                                      </div> -->
+                                   <div class="form-select form-group control-order-by formSelect">
+                                      <label for="field-order-by">Ordenar por</label>
+                                      <div class="input-group mb-3">
+                                         <select id="field-order-by" name="sort" class="form-control" aria-label="R" aria-describedby="basic-addon2">
+                                            <option value="score desc, metadata_modified desc" selected="selected">Relevância</option>
+                                            <option value="title_string asc">Nome Crescente</option>
+                                            <option value="title_string desc">Nome Descrescente</option>
+                                            <option value="metadata_modified desc">Modificada pela última vez</option>
+                                            <option value="views_recent desc">Popular</option>
+                                         </select>
+                                         <div class="input-group-append">
+                                            <span class="" id="basic-addon2">
+                                            <button class="btn btn-main js-hide" type="submit">
+                                            <i class="fa fa-filter"></i>
+                                            </button>
+                                            </span>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </form>
+                          <form id="dataset-search-form" class="search-form" method="get" data-module="select-switch">
+                          </form>
+                          <!-- Snippet snippets/search_form.html end -->
+                          <!-- Snippet snippets/package_list.html start -->
+                          <!-- tab list article-->
+                          <ul class="nav nav-tabs ml-0" role="tablist">
+                             <li class="nav-item pb-0">
+                                <a class="nav-link active show" data-toggle="tab" href="#home" role="tab"
+                                   aria-controls="home" aria-selected="true">
+                                <i class="icon-list icons d-block"></i>
+                                </a>
+                             </li>
+                             <li class="nav-item pb-0">
+                                <a class="nav-link" data-toggle="tab" href="#profile" role="tab"
+                                   aria-controls="profile" aria-selected="false"><i class="icon-grid icons d-block"></i>
+                                </a>
+                             </li>
+                          </ul>
+                          <!-- /tab list article-->
+                          <!--content  conteúdo-->
+                          <div class="tab-content">
+                             <div class="tab-pane active show" id="home" role="tabpanel">
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>Dado Novo Teste - erro</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...
+                                         </p>
+                                         <a href="/dataset/dado-erro-openshift" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2022-02-22T16:47:43.571946&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#34;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but alsoorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#34;, &#39;format&#39;: &#39;DOCX&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;58e972fd-e0f2-4616-a2b7-04d128507092&#39;, &#39;last_modified&#39;: &#39;2022-02-22T16:47:43.516026&#39;, &#39;metadata_modified&#39;: &#39;2022-02-22T16:47:56.347965&#39;, &#39;mimetype&#39;: &#39;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;modulo dado erro&#39;, &#39;package_id&#39;: &#39;d033ab24-0cac-4f82-8810-91a13d2679d7&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 457432, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/d033ab24-0cac-4f82-8810-91a13d2679d7/resource/58e972fd-e0f2-4616-a2b7-04d128507092/download/modulo-3-contrato-1-4.docx&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=DOCX"><span class="badge badge-dark mr-2 btn-dark">DOCX</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">22/02/2022</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>Recente</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            Só para teste
+                                         </p>
+                                         <a href="/dataset/recente2" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2022-02-18T13:24:25.599431&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;&#39;, &#39;format&#39;: &#39;SVG&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;ee32bfc0-fdb0-4f7e-a6aa-c5ff2c6efd6b&#39;, &#39;last_modified&#39;: &#39;2022-02-18T13:24:25.525267&#39;, &#39;metadata_modified&#39;: &#39;2022-02-18T13:24:26.073089&#39;, &#39;mimetype&#39;: &#39;image/svg+xml&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;&#39;, &#39;package_id&#39;: &#39;d1bf55e2-e488-4f75-b30a-ce69035498cf&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 4147, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/d1bf55e2-e488-4f75-b30a-ce69035498cf/resource/ee32bfc0-fdb0-4f7e-a6aa-c5ff2c6efd6b/download/java.svg&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=SVG"><span class="badge badge-dark mr-2 btn-dark">SVG</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">18/02/2022</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>Teste</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            Testes
+                                         </p>
+                                         <a href="/dataset/teste" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2022-02-17T12:04:51.608182&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;&#39;, &#39;format&#39;: &#39;TXT&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;adf0fd0d-fee0-45e8-9d22-f104ef52aa27&#39;, &#39;last_modified&#39;: &#39;2022-02-17T12:04:51.556099&#39;, &#39;metadata_modified&#39;: &#39;2022-02-17T12:04:52.506517&#39;, &#39;mimetype&#39;: &#39;text/plain&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;&#39;, &#39;package_id&#39;: &#39;a9d97e28-56a2-4eb3-9802-205fb19113c7&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 341, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/a9d97e28-56a2-4eb3-9802-205fb19113c7/resource/adf0fd0d-fee0-45e8-9d22-f104ef52aa27/download/samsung-galaxy-buds-pro-parametriceq.txt&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=TXT"><span class="badge badge-dark mr-2 btn-dark">TXT</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>teste2</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            teste
+                                         </p>
+                                         <a href="/dataset/teste2" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2021-11-12T13:53:48.976757&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;&#39;, &#39;format&#39;: &#39;PDF&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;fc6b7f82-7214-431f-ad10-c4679911efc2&#39;, &#39;last_modified&#39;: &#39;2021-11-12T13:53:48.853052&#39;, &#39;metadata_modified&#39;: &#39;2021-11-12T13:53:49.519764&#39;, &#39;mimetype&#39;: &#39;application/pdf&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;&#39;, &#39;package_id&#39;: &#39;9d69e8a9-70b2-4876-9b86-e90b8dc8a8d0&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 970238, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/9d69e8a9-70b2-4876-9b86-e90b8dc8a8d0/resource/fc6b7f82-7214-431f-ad10-c4679911efc2/download/arquivo-exemplo.pdf&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=PDF"><span class="badge badge-danger mr-2 btn-danger">PDF</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>conjunto de dados</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            conjunto de dados teste.
+                                         </p>
+                                         <a href="/dataset/conjunto-dados" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2021-12-17T19:34:45.197178&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;descrição bairros&#39;, &#39;format&#39;: &#39;JSON&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;33bb7f9a-7e60-4e0c-bfbe-16fe9aec5226&#39;, &#39;last_modified&#39;: &#39;2021-12-17T19:34:45.139898&#39;, &#39;metadata_modified&#39;: &#39;2021-12-17T19:35:14.005343&#39;, &#39;mimetype&#39;: &#39;application/json&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;Bairros&#39;, &#39;package_id&#39;: &#39;94d30caa-a9f2-47a1-adfe-c57cd4ba11c7&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 28413, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/94d30caa-a9f2-47a1-adfe-c57cd4ba11c7/resource/33bb7f9a-7e60-4e0c-bfbe-16fe9aec5226/download/bairro_final.json&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=JSON"><span class="badge badge-warning mr-2 btn-warning">JSON</span></a>
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2021-12-17T19:35:14.020233&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;&#39;, &#39;format&#39;: &#39;JSON&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;d18d01d9-b5b9-4242-852c-03a5ede4aea9&#39;, &#39;last_modified&#39;: &#39;2021-12-17T19:35:13.992353&#39;, &#39;metadata_modified&#39;: &#39;2021-12-17T19:35:14.596693&#39;, &#39;mimetype&#39;: &#39;application/json&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;banco_final.json&#39;, &#39;package_id&#39;: &#39;94d30caa-a9f2-47a1-adfe-c57cd4ba11c7&#39;, &#39;position&#39;: 1, &#39;resource_type&#39;: None, &#39;size&#39;: 9438, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/94d30caa-a9f2-47a1-adfe-c57cd4ba11c7/resource/d18d01d9-b5b9-4242-852c-03a5ede4aea9/download/banco_final.json&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=JSON"><span class="badge badge-warning mr-2 btn-warning">JSON</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--Loop resultado de pesquisasa-->
+                                <div class="card cardSearch">
+                                   <div class="card-body">
+                                      <h5>arquivo-exemplo</h5>
+                                      <hr>
+                                      <!-- Texto de descrição do dado Truncate 100 caracteres e o link de direcionamento do dados-->
+                                      <div class="">
+                                         <p class="mb-1">
+                                            Este conjunto de dados não tem descrição
+                                         </p>
+                                         <a href="/dataset/arquivo-exemplo" class="text-blue floatRight" rel="">Ver mais</a>
+                                      </div>
+                                      <!--Truncate-->
+                                      <div class="d-flex align-items-center mt-2">
+                                         <!-- <pre>{&#39;cache_last_updated&#39;: None, &#39;cache_url&#39;: None, &#39;created&#39;: &#39;2021-11-12T02:12:07.950333&#39;, &#39;datastore_active&#39;: False, &#39;description&#39;: &#39;&#39;, &#39;format&#39;: &#39;PDF&#39;, &#39;hash&#39;: &#39;&#39;, &#39;id&#39;: &#39;ba07ffa4-9f4e-4613-bbd4-de0c030c2811&#39;, &#39;last_modified&#39;: &#39;2021-11-12T02:12:07.892275&#39;, &#39;metadata_modified&#39;: &#39;2021-11-12T02:12:08.503731&#39;, &#39;mimetype&#39;: &#39;application/pdf&#39;, &#39;mimetype_inner&#39;: None, &#39;name&#39;: &#39;&#39;, &#39;package_id&#39;: &#39;81bb4e73-6707-48fc-b6c2-045f8ee714e1&#39;, &#39;position&#39;: 0, &#39;resource_type&#39;: None, &#39;size&#39;: 970238, &#39;state&#39;: &#39;active&#39;, &#39;url&#39;: &#39;https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/dataset/81bb4e73-6707-48fc-b6c2-045f8ee714e1/resource/ba07ffa4-9f4e-4613-bbd4-de0c030c2811/download/arquivo-exemplo.pdf&#39;, &#39;url_type&#39;: &#39;upload&#39;}</pre> -->
+                                         <a href="/dataset?res_format=PDF"><span class="badge badge-danger mr-2 btn-danger">PDF</span></a>
+                                      </div>
+                                      <div class="mt-3 floatRight">
+                                         <i class="icon-eye icons mr-1 pt-1"></i> Visitas<b class="ml-1 mr-2 text-primary">0</b> |
+                                         <i class="icon-cloud-upload icons mr-1 pt-1 ml-2"></i>
+                                         Atualização:<b class="ml-1 text-primary">11/11/2021</b>
+                                      </div>
+                                   </div>
+                                </div>
+                                <!--/Loop resultado de pesquisas-->
+                             </div>
+                             <div class="tab-pane" id="profile" role="tabpanel">
+                                <div class="row">
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>Dado Novo Teste - erro</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=DOCX"><span class="badge badge-dark mr-2 btn-dark">DOCX</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">22/02/2022</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>Recente</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               Só para teste
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=SVG"><span class="badge badge-dark mr-2 btn-dark">SVG</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">18/02/2022</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>Teste</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               Testes
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=TXT"><span class="badge badge-dark mr-2 btn-dark">TXT</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>teste2</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               teste
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=PDF"><span class="badge badge-danger mr-2 btn-danger">PDF</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>conjunto de dados</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               conjunto de dados teste.
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=JSON"><span class="badge badge-warning mr-2 btn-warning">JSON</span></a>
+                                               <a href="/dataset?res_format=JSON"><span class="badge badge-warning mr-2 btn-warning">JSON</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">17/02/2022</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-xl-4 col-lg-6 col-sm-6 col-12">
+                                      <div class="card cardSearch">
+                                         <div class="card-body">
+                                            <h5>arquivo-exemplo</h5>
+                                            <hr>
+                                            <p class="mb-2">
+                                               Este conjunto de dados não tem descrição
+                                            </p>
+                                            <a href="" class="text-blue" rel="">Ver mais</a>
+                                            <div class="d-flex align-items-center mt-2">
+                                               <a href="/dataset?res_format=PDF"><span class="badge badge-danger mr-2 btn-danger">PDF</span></a>
+                                            </div>
+                                            <div class="mt-3">
+                                               Visitas<b class="mr-1 ml-1 text-primary">0</b>
+                                               Atualização:<b class="ml-1 text-primary">11/11/2021</b>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <!--/content conteúdo-->
+                          <!-- Snippet snippets/package_list.html end -->
+                       </div>
+                    </section>
+                    <section class="module">
+                       <div class="module-content">
+                          <small>
+                          Você também pode ter acesso a esses registros usando a <a href="/api/3">API</a> (veja <a href="http://docs.ckan.org/en/2.9/api/">Documentação da API</a>). 
+                          </small>
+                       </div>
+                    </section>
+                 </div>
+              </div>
+           </div>
+        </section>
+     </div>
+     <!-- Footer -->
+     <footer id="footer">
+        <div class="footer-top style-3 bgFooter padding-tb">
+           <div class="shap-footer">
+              <div class="line line-2"><img src="/base/assets/images/data-footer.png" width="250"></div>
+           </div>
+           <div class="container">
+              <div class="row">
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item first-set">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <a href="https://www.fortaleza.ce.gov.br/" target="_blank">
+                                <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza">
+                                </a>
+                             </div>
+                             <div class="content">
+                                <hr>
+                                <ul>
+                                   <li class="d-flex justify-content-center">
+                                      <div class=" footer-social">
+                                         <a target="_blank" href="https://pt-br.facebook.com/FortalezaCitinova/">
+                                         <i class="fa fa-facebook  icon-circle bg-blue-darken" aria-hidden="true"></i>
+                                         </a>
+                                         <a target="_blank" href="https://www.instagram.com/prefeiturafortalezavoce/">
+                                         <i class="fa fa-instagram icon-circle bg-pink text-white" aria-hidden="true"></i>
+                                         </a>
+                                         <a target="_blank" href="https://www.youtube.com/user/prefeiturafortaleza">
+                                         <i class="fa fa-youtube   icon-circle bg-danger" aria-hidden="true"></i>
+                                         </a>
+                                      </div>
+                                   </li>
+                                   <li class="justify-content-center mt-2">
+                                      <hr>
+                                      <a target="_blank" href="https://acessoainformacao.fortaleza.ce.gov.br/sistema/site/index.html?ReturnUrl=%2fsistema%2f">
+                                      <img src="/base/assets/images/ainformacao.png" alt="icone acesso informação" width="55">
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Principal</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/">Home</a></li>
+                                   <li><a href="/about">Sobre</a></li>
+                                   <li><a href="/dataset/">Conjunto de dados</a></li>
+                                   <li><a href="/group/">Grupos</a></li>
+                                   <li><a href="/organization/">Organizações</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Grupos</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/group/cultura">Cultura</a></li>
+                                   <li><a href="/group/demografia">Demografia</a></li>
+                                   <li><a href="/group/economia">Economia</a></li>
+                                   <li><a href="/group/educacao">Educação</a></li>
+                                   <li><a href="/group/">Ver todos</a></li>
+                                   <!-- <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
+                                      <li><a href="/group/habitacao">Habitação</a></li>
+                                      <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
+                                      <li><a href="/group/saude">Saúde</a></li>
+                                      <li><a href="/group/seguranca">Segurança</a></li>
+                                      <li><a href="/group/transporte">Transporte</a></li>
+                                      <li><a href="/group/turismo">Turismo</a></li> -->
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Ajuda</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/faq">Dúvidas frequentes</a></li>
+                                   <li><a href="/contato">Contato</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="footer-bottom style-3">
+           <div class="container">
+              <div class="section-wrapper">
+                 <p class="text-white">&copy; Fortaleza Digital | CITINOVA - Fundação de Ciência, Tecnologia e Inovação de Fortaleza - Rua dos Tremembés, 02 - Praia de Iracema - Fortaleza-CE
+                 </p>
+              </div>
+           </div>
+        </div>
+     </footer>
+     <!--/Footer  -->
+     <!-- scrollToTop -->
+     <a href="#" class="scrollToTop">
+      <i class="icofont-swoosh-up bg-yellow"></i><span class=""></span>
+      <span class=""></span>
+     </a>
+
+
+    <!-- build:js js/main.min.js -->
+    <!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->    
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/share.js"></script>
+    <script src="js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/function.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Dados abertos</title>
+    <!-- <base href="/"> -->
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/vendor/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="css/vendor/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/vendor/icofont.min.css" />
+    <link rel="stylesheet" href="css/vendor/ico-custom.min.css"  />
+    <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body class="">
+
+    <header class="account-masthead">
+        <div class="container">
+        </div>
+     </header>
+     <!-- pesquisa  -->
+     <div class="search-area">
+        <div class="container">
+           <div class="search-input">
+              <div class="search-close">
+                 <i class="icofont-close-squared-alt"></i>
+              </div>
+              <form role="search" action="/dataset/" method="get">
+                 <input type="text" name="text" class="form-control" placeholder="Pesquisar dados" name="q" placeholder="Pesquisar">
+                 <button class="search-btn" type="submit">
+                 <span class="serch-icon">
+                 <i class="icon-magnifier icons"></i>
+                 </span>
+                 </button>
+              </form>
+           </div>
+        </div>
+     </div>
+     <!-- pesquisa  -->
+     <style>
+        .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
+        font-size: smaller;
+        color: #151b1e;
+        }
+     </style>
+     <!-- Mobile menu -->
+     <div class="mobile-menu crypto-bg ">
+        <nav class="mobile-header d-flex justify-content-between">
+           <div class="header-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+           </div>
+           <div class="header-logo">
+              <a href="" rel=""><img src="assets/images/logo-dado.png" width="170" alt="Dados-abertos"></a>
+           </div>
+           <div class="search">
+              <i class="icon-magnifier icons text-white"></i>
+           </div>
+        </nav>
+        <nav class="mobile-menu">
+           <div class="mobile-menu-area">
+              <div class="mobile-menu-area-inner">
+                 <a href="/" rel="">
+                 <img src="assets/images/logo.png" alt="logo citinova" width="130">
+                 </a>
+                 <ul>
+                    <li>
+                       <a href="#">Home</a>
+                       <ul>
+                          <li class="active"><a href="/">Home</a></li>
+                          <li><a href="index-host.html">Sobre</a></li>
+                          <li><a href="index-erp.html">Conjunto de dados</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Sobre</a>
+                       <ul>
+                          <li><a href="about.html">Sobre</a></li>
+                          <li>
+                             <a href="#">Services</a>
+                             <ul>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="service-single.html">Service Single</a></li>
+                             </ul>
+                          </li>
+                          <li><a href="#">Team Member</a>
+                          </li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Conjunto de dados</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Grupos</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Dúvidas</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Contato</a>
+                       <ul>
+                       </ul>
+                    </li>
+                    <li class="mt-3"><button class="btn btn-pink btn-block">Entrar</button></li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </div>
+     <!-- Mobile Menu -->
+     <section class="app-menu d-none d-lg-block bg-gray-100">
+        <!--acessibilidade-->
+        <div class="app-acessibilidade">
+           <div class="container-fluid">
+              <div class="row align-items-center">
+                 <div class="col-sm-6  col-12 app-acessibilidadeMenu">
+                    <a class="scroll mr-1" href="#main-central"             data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 1"
+                       data-original-title="alt + 1"  accesskey="1"> Conteúdo Central |</a>
+                    <a class="scroll mr-1" href="#navMenu"                  data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 2"
+                       data-original-title="alt + 2"  accesskey="2"> Menu |</a>
+                    <a class="scroll mr-1" href="#search"                   data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 3"
+                       data-original-title="alt + 3" accesskey="3"> Busca  |</a>
+                    <a class="scroll mr-1" href="#footer"                   data-toggle="tooltip"                                                                                                  data-toggle="tooltip"
+                       data-placement="top"
+                       title="atalho alt + 4"
+                       data-original-title="alt + 4" accesskey="4"> Rodapé </a>
+                    <a href="https://vlibras.gov.br/" target="_blank" class="ml-3 mr-1" rel="noreferrer">
+                    <i class="fa fa-deaf text-gray-700" aria-hidden="true"></i>
+                    </a>
+                    <a href="./acessibilidade" class="mr-1"><i class="fa d-inline fa-wheelchair text-gray-700"></i></a>
+                    <a href="#altocontraste" id="altocontraste" class="colorContrast mr-1 text-gray-700"
+                       onclick="window.toggleContrast()">
+                    <i class="fa d-inline fa-adjust text-blue text-gray-700"></i></a>
+                    <a href="javascript:window.toggleFont('-')" class="mr-1 text-gray-700">A-</a>
+                    <a href="javascript:window.toggleFont('=')" class="mr-1 text-gray-700">A</a>
+                    <a href="javascript:window.toggleFont('+')" class="mr-1 text-gray-700">A+</a>
+                 </div>
+                 <div class="col-sm-6  col-12 app-acessibilidadeItens">
+                    <ul class="menu mb-0">
+                       <li class="nav-item">
+                          <a href="https://acessoainformacao.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Acesso a informação</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="https://transparencia.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Transparência</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Serviços</a>
+                       </li>
+                       <li class="nav-item">
+                          <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Legislação</a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!--/acessibilidade-->
+     </section>
+     <!-- menu desktop -->
+     <header id="header"class="header-section crypto bg-main">
+        <div class="header-area">
+           <div class="container">
+              <div class="primary-menu">
+                 <div class="logo align-items-center">
+                    <a href="/" rel="" target="_blank">
+                    <img src="/base/assets/images/logo-citinovaNova.png" alt="Prefeitura de fortaleza" width="185">
+                    </a>
+                    <a href="/">
+                    <img src="/base/assets/images/dados.png" alt="dados abertos" width="120">
+                    </a>
+                 </div>
+                 <nav id="navMenu" class="main-area">
+                    <div class="main-menu">
+                       <ul>
+                          <li>
+                             <a class="active" href="/">Home</a>
+                          </li>
+                          <li>
+                             <a href="/about">Sobre</a>
+                          </li>
+                          <li>
+                             <a href="/dataset/">Conjunto de dados</a>
+                          </li>
+                          <li>
+                             <a href="/group/" onclick="window.location='/group/'">Grupos</a>
+                             <ul>
+                                <li><a href="/group/cultura">Cultura</a></li>
+                                <li><a href="/group/demografia">Demografia</a></li>
+                                <li><a href="/group/economia">Economia</a></li>
+                                <li><a href="/group/educacao">Educação</a></li>
+                                <li><a href="/group/esportes">Esportes</a></li>
+                                <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
+                                <li><a href="/group/habitacao">Habitação</a></li>
+                                <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
+                                <li><a href="/group/saude">Saúde</a></li>
+                                <li><a href="/group/seguranca">Segurança</a></li>
+                                <li><a href="/group/transporte">Transporte</a></li>
+                                <li><a href="/group/turismo">Turismo</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                             <a href="/organization/">Organizações</a>
+                          </li>
+                          <li>
+                             <a href="#">Ajuda</a>
+                             <ul>
+                                <li><a href="/contato">Fale conosco</a></li>
+                                <li><a href="/faq">Dúvidas frequentes</a></li>
+                                <li><a href="/manuais">Manuais e vídeos</a></li>
+                             </ul>
+                          </li>
+                       </ul>
+                    </div>
+                    <div style="border-right: 1px solid #ffffff; width: 2px; height: 28px;"></div>
+                    <div class="header-right d-flex justify-content-end">
+                       <div class="main-menu">
+                          <ul>
+                             <li class="search">
+                                <a href="#"><i class="icon-magnifier icons font-2xl"></i></a>
+                             </li>
+                             <li>
+                                <a href="/user/adm-ckan" onclick="window.location='/user/adm-ckan'" title="Visualizar Perfil"><img src="//gravatar.com/avatar/fe5a0b1ac1396d6382e7e1331a748696?s=22&amp;d=identicon"
+                                   class="user-image" width="22" height="22" alt="Gravatar" /></a>
+                                <ul>
+                                   <li>
+                                      <a href="/dashboard/" title="Painel de Controle (0 novo item)">
+                                      Painel
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="/user/edit/adm-ckan" title="Edit settings">
+                                      Settings
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="/user/_logout" title="Sair">
+                                      Sair
+                                      </a>
+                                   </li>
+                                </ul>
+                             </li>
+                          </ul>
+                       </div>
+                    </div>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </header>
+     <!-- Menu desktop -->
+
+     <div class="page-header">
+        <div class="shap-pageheader">
+           <div class="line line-1"><img src="/base/assets/images/data-footer.png" alt="linha de dados"></div>
+           <div class="line line-2"><img src="/base/assets/images/data-footer.png" alt="linha de dados"></div>
+           <div class="line line-3"><img src="/base/assets/images/data-footer.png" alt="linha de dados"></div>
+           <div class="line line-4"><img src="/base/assets/images/data-footer.png" alt="linha de dados"></div>
+           <div class="line line-5"><img src="/base/assets/images/data-footer.png" alt="linha de dados"></div>
+        </div>
+        <div class="container">
+           <div class="pageheader-textarea text-center">
+              <h1>Número de Óbitos por Acidentes de Trânsito em Fortaleza</h1>
+           </div>
+        </div>
+     </div>
+     <section class="breadCrumb container mt-3">
+        <div class="toolbar">
+           <nav class="breadcrumb">
+              <!-- Snippet snippets/home_breadcrumb_item.html start -->
+              <li class="home">
+                 <a href="/" aria-label="Início"><i class="fa fa-home"></i><span></span></a>
+              </li>
+              <!-- Snippet snippets/home_breadcrumb_item.html end -->
+              <span class="breadcrumb-item active">
+              <li><a href="/organization/">Organizações</a></li>
+              <li><a href="/organization/citinova">Fundação de Ciência,...</a></li>
+              <li class="active"><a href="/dataset/obitos-transito">Número de Óbitos por...</a></li>
+           </nav>
+        </div>
+     </section>
+     <div class="main">
+        <section class="service-single mt-5">
+           <div id="content" class="container">
+              <div class="flash-messages">
+              </div>
+              <div class="row wrapper">
+                 <aside class="secondary col-sm-3">
+                    <!-- Snippet package/snippets/info.html start -->
+                    <div class="brochure text-left reset-circle mb-0">
+                       <h3>Organização</h3>
+                       <div class="divGrupo-icon">
+                          <img src="https://dados.fortaleza.ce.gov.br/uploads/group/2021-11-12-142652.015407CITINOVA-COR.png" width="180" alt="citinova" />
+                       </div>
+                       <p class="mt-2">Não há descrição para essa organização
+                       </p>
+                       <div class="nums">
+                          <dl>
+                             <dt>Seguidores</dt>
+                             <dd data-module="followers-counter" data-module-id="8948357e-4b80-437a-befd-ae24573dbe55" data-module-num_followers="0"><span>0</span></dd>
+                          </dl>
+                       </div>
+                       <div class="follow_button">
+                          <!-- Snippet snippets/follow_button.html start -->
+                          <a href="/dataset/follow/8948357e-4b80-437a-befd-ae24573dbe55" class="btn btn-success" data-module="follow" data-module-type="dataset" data-module-id="8948357e-4b80-437a-befd-ae24573dbe55" data-module-action="follow">
+                          <i class="fa fa-plus-circle"></i>
+                          Seguir
+                          </a>
+                          <!-- Snippet snippets/follow_button.html end -->
+                       </div>
+                    </div>
+                    <div class="service-social">
+                       <h3 class="mb-3 mt-3">Compartilhe</h3>
+                       <div class="d-flex justify-content-between">
+                          <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://dados.fortaleza.ce.gov.br/dataset/obitos-transito" class="mr-2">
+                          <i class="fa fa-facebook  icon-circle bg-blue-darken" aria-hidden="true"></i>
+                          </a>
+                          <a id="#btnSocialwhatsapp" target="_blank" href="https://api.whatsapp.com/send?text=" class="mr-2">
+                          <i class="fa fa-whatsapp icon-circle bg-success" aria-hidden="true"></i>
+                          </a>
+                          <a target="_blank" href="https://twitter.com/share?url=https://dados.fortaleza.ce.gov.br/dataset/obitos-transito" class="mr-2">
+                          <i class="fa fa-twitter   icon-circle bg-info" aria-hidden="true"></i>
+                          </a>
+                       </div>
+                       <p></p>
+                    </div>
+                    <h3>Conheça </h3>
+                    <a href="https://digital.fortaleza.ce.gov.br/" target="_blank">
+                    <img src="/base/assets/images/logomarca.jpg" width="160" alt="Fortaleza digital">
+                    </a>
+                    <section class="module module-narrow">
+                       <div class="module context-info">
+                          <div class="module-content">
+                          </div>
+                       </div>
+                    </section>
+                    <!-- Snippet package/snippets/info.html end -->
+                 </aside>
+                 <div class="primary col-sm-9 col-xs-12">
+                    <article class="module">
+                       <header class="module-content page-header" style="padding: 0px !important;">
+                          <div class="content_action">
+                             <a class="btn btn-default" href="/dataset/edit/obitos-transito"><i class="fa fa-wrench"></i> Gerenciar</a>
+                          </div>
+                          <!-- <ul class="nav nav-tabs">
+                             </ul> -->
+                       </header>
+                       <div class="module-content">
+                          <span class="insert-comment-thread"></span>
+                          <!-- Snippet package/snippets/resources_list.html start -->
+                          <ul class="nav nav-tabs ml-0" role="tablist">
+                             <li class="nav-item pb-0">
+                                <a class="nav-link active show" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Conjunto de dados</a>
+                             </li>
+                             <li class="nav-item pb-0"><a class="nav-link"  href="/dataset/groups/obitos-transito" role="tab"  aria-selected="false">Grupos</a></li>
+                             <li class="nav-item pb-0"><a class="nav-link"  href="/dataset/activity/obitos-transito" role="tab"  aria-selected="false">Fluxo de Atividades</a></li>
+                          </ul>
+                          <div class="tab-content">
+                             <div class="tab-pane active show" id="home" role="tabpanel">
+                                <p>
+                                <p>Mortalidade - Brasil
+                                   Óbitos p/Ocorrênc por Município e Ano do Óbito
+                                   Causa - CID-BR-10: . 104 Acidentes de transporte
+                                   Período:2010-2019
+                                   Taxa municipal de homicídios por cem mil habitantes. Causa - CIDBR-10 (Grandes grupos): V01-V99 Acidentes de transporte por local de ocorrência.
+                                   Fonte: Datasus, 2019
+                                </p>
+                                </p>
+                                <h4 class="text-left">Dados e recursos</h4>
+                                <div class="card">
+                                   <div class="card-body card-data">
+                                      <div class="row align-items-center">
+                                         <div class="col-lg-1 col-sm-1  col-6 order-1">
+                                            <i class="fa fa-file-o fa-3x text-success mr-3" aria-hidden="true"></i> 
+                                            <p class="textTitle bg-success">CSV</p>
+                                         </div>
+                                         <div class="col-lg-10 col-sm-10 order-sm-3 order-3 order-lg-2 col-12 linksDatas">
+                                            <a href="/dataset/obitos-transito/resource/dc307e98-ffba-4ff0-9adf-8ddcaf64a9b5" title="Número de Óbitos por Acidentes de Trânsito em Fortaleza " class="link-data">Número de Óbitos por Acidentes de Trânsito em...</a>
+                                         </div>
+                                         <div class="col-lg-1 order-sm-2 order-lg-3 col-6  order-sm-2 order-2">
+                                            <div class="icone-eyeDownload">
+                                               <a href="/dataset/obitos-transito/resource/dc307e98-ffba-4ff0-9adf-8ddcaf64a9b5/edit" class="icon-circle bg-blue text-white mr-2"><i class="fa fa-pencil"     aria-hidden="true"></i></a>
+                                               <a href="/dataset/obitos-transito/resource/dc307e98-ffba-4ff0-9adf-8ddcaf64a9b5" class="icon-circle bg-blue text-white mr-2"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                               <a href="https://dados.fortaleza.ce.gov.br/dataset/8948357e-4b80-437a-befd-ae24573dbe55/resource/dc307e98-ffba-4ff0-9adf-8ddcaf64a9b5/download/a133345189_28_143_208.csv" target="_blank" class="icon-circle bg-success text-white"><i class="fa fa-download"  aria-hidden="true"></i></a>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <!-- Snippet package/snippets/resources_list.html end -->
+                          <div class="bs-example" style="margin-top: 10px;margin-bottom: 10px;">
+                             <div class="bootstrap-tagsinput" style="padding: 10px;">
+                                <span class="tag label label-info px-1"><a style="color: #00a195;" href="/dataset/?tags=Mobilidade">Mobilidade</a></span> 
+                                <span class="tag label label-info px-1"><a style="color: #00a195;" href="/dataset/?tags=Seguran%C3%A7a">Segurança</a></span> 
+                             </div>
+                          </div>
+                          <!-- Snippet package/snippets/additional_info.html start -->
+                          <section class="additional-info">
+                             <h3>Informações Adicionais</h3>
+                             <table class="table table-striped table-bordered table-condensed">
+                                <thead>
+                                   <tr>
+                                      <th scope="col">Campo</th>
+                                      <th scope="col">Valor</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Fonte</th>
+                                      <td class="dataset-details" property="foaf:homepage"><a href="http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sim/cnv/obt10br.def" rel="foaf:homepage" target="_blank">http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sim/cnv/obt10br.def</a></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Autor</th>
+                                      <td class="dataset-details" property="dc:creator"><a href=mailto:citinova@citinova.fortaleza.ce.gov.br>Coordenação de Cidades Inteligentes</a></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Mantenedor</th>
+                                      <td class="dataset-details" property="dc:contributor"><a href=mailto:citinova@citinova.fortaleza.ce.gov.br>Coordenação de Cidades Inteligentes</a></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Versão</th>
+                                      <td class="dataset-details">1.0</td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Estado</th>
+                                      <td class="dataset-details">active</td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Última Atualização</th>
+                                      <td class="dataset-details">
+                                         <!-- Snippet snippets/local_friendly_datetime.html start -->
+                                         <span class="automatic-local-datetime" data-datetime="2022-02-28T11:33:27-0300">
+                                         fevereiro 28, 2022, 14:33 (UTC)
+                                         </span>
+                                         <!-- Snippet snippets/local_friendly_datetime.html end -->
+                                      </td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row" class="dataset-label">Criado</th>
+                                      <td class="dataset-details">
+                                         <!-- Snippet snippets/local_friendly_datetime.html start -->
+                                         <span class="automatic-local-datetime" data-datetime="2022-02-11T08:37:11-0300">
+                                         fevereiro 11, 2022, 11:37 (UTC)
+                                         </span>
+                                         <!-- Snippet snippets/local_friendly_datetime.html end -->
+                                      </td>
+                                   </tr>
+                                </tbody>
+                             </table>
+                          </section>
+                          <!-- Snippet package/snippets/additional_info.html end -->
+                       </div>
+                    </article>
+                 </div>
+              </div>
+           </div>
+        </section>
+     </div>     
+
+     <!-- Footer -->
+     <footer id="footer">
+        <div class="footer-top style-3 bgFooter padding-tb">
+           <div class="shap-footer">
+              <div class="line line-2"><img src="/base/assets/images/data-footer.png" width="250"></div>
+           </div>
+           <div class="container">
+              <div class="row">
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item first-set">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <a href="https://www.fortaleza.ce.gov.br/" target="_blank">
+                                <img src="/base/assets/images/logo.png" alt="logo prefeitura de fortaleza">
+                                </a>
+                             </div>
+                             <div class="content">
+                                <hr>
+                                <ul>
+                                   <li class="d-flex justify-content-center">
+                                      <div class=" footer-social">
+                                         <a target="_blank" href="https://pt-br.facebook.com/FortalezaCitinova/">
+                                         <i class="fa fa-facebook  icon-circle bg-blue-darken" aria-hidden="true"></i>
+                                         </a>
+                                         <a target="_blank" href="https://www.instagram.com/prefeiturafortalezavoce/">
+                                         <i class="fa fa-instagram icon-circle bg-pink text-white" aria-hidden="true"></i>
+                                         </a>
+                                         <a target="_blank" href="https://www.youtube.com/user/prefeiturafortaleza">
+                                         <i class="fa fa-youtube   icon-circle bg-danger" aria-hidden="true"></i>
+                                         </a>
+                                      </div>
+                                   </li>
+                                   <li class="justify-content-center mt-2">
+                                      <hr>
+                                      <a target="_blank" href="https://acessoainformacao.fortaleza.ce.gov.br/sistema/site/index.html?ReturnUrl=%2fsistema%2f">
+                                      <img src="/base/assets/images/ainformacao.png" alt="icone acesso informação" width="55">
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Principal</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/">Home</a></li>
+                                   <li><a href="/about">Sobre</a></li>
+                                   <li><a href="/dataset/">Conjunto de dados</a></li>
+                                   <li><a href="/group/">Grupos</a></li>
+                                   <li><a href="/organization/">Organizações</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Grupos</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/group/cultura">Cultura</a></li>
+                                   <li><a href="/group/demografia">Demografia</a></li>
+                                   <li><a href="/group/economia">Economia</a></li>
+                                   <li><a href="/group/educacao">Educação</a></li>
+                                   <li><a href="/group/">Ver todos</a></li>
+                                   <!-- <li><a href="/group/planejamentoegestao">Gestão Pública</a></li>
+                                      <li><a href="/group/habitacao">Habitação</a></li>
+                                      <li><a href="/group/meioambiente">Meio ambiente e Urbanismo</a></li>
+                                      <li><a href="/group/saude">Saúde</a></li>
+                                      <li><a href="/group/seguranca">Segurança</a></li>
+                                      <li><a href="/group/transporte">Transporte</a></li>
+                                      <li><a href="/group/turismo">Turismo</a></li> -->
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-item">
+                       <div class="footer-inner">
+                          <div class="footer-content">
+                             <div class="title">
+                                <h6 class="font-weight-bold">Ajuda</h6>
+                             </div>
+                             <div class="content">
+                                <ul>
+                                   <li><a href="/faq">Dúvidas frequentes</a></li>
+                                   <li><a href="/contato">Contato</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="footer-bottom style-3">
+           <div class="container">
+              <div class="section-wrapper">
+                 <p class="text-white">&copy; Fortaleza Digital | CITINOVA - Fundação de Ciência, Tecnologia e Inovação de Fortaleza - Rua dos Tremembés, 02 - Praia de Iracema - Fortaleza-CE
+                 </p>
+              </div>
+           </div>
+        </div>
+     </footer>
+     <!--/Footer  -->
+     <!-- scrollToTop -->
+     <a href="#" class="scrollToTop">
+      <i class="icofont-swoosh-up bg-yellow"></i><span class=""></span>
+      <span class=""></span>
+     </a>
+
+
+    <!-- build:js js/main.min.js -->
+    <!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->    
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/share.js"></script>
+    <script src="js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/function.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
