@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/vendor/icofont.min.css" />
     <link rel="stylesheet" href="css/vendor/ico-custom.min.css"  />
     <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/vendor/glowCookies.css" />
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 
@@ -20,10 +21,21 @@
 
 <body class="">
 
+   <div id="loader-wrapper">
+      <img src="/base/assets/images/icon-citinova.png" class="logo-svg" alt="icone load">
+      <div id="loader">
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+
     <header class="account-masthead">
         <div class="container">
         </div>
      </header>
+
+
+
      <!-- pesquisa  -->
      <div class="search-area">
         <div class="container">
@@ -270,41 +282,6 @@
      <div class="home-custom homepage teste layout-1">
         <!-- Banner  -->
         <section class="banner-section style-6 crypto crypto-bg" style="padding-top:15px;">
-           <!--imagem de fundo-->
-           <!-- <div class="round-one d-none d-lg-block">
-              <a href="./index.html" rel="">
-                  <img src="/base/assets/images/contato-desenho.jpg" alt="logo dados-abertos">
-              </a>
-              </div> -->
-           <!--/imagem de fundox
-              -->
-           <!-- <span>package_count:</span></br>
-              <span>users_list:SELECT &#34;user&#34;.password AS user_password, &#34;user&#34;.id AS user_id, &#34;user&#34;.name AS user_name, &#34;user&#34;.fullname AS user_fullname, &#34;user&#34;.email AS user_email, &#34;user&#34;.apikey AS user_apikey, &#34;user&#34;.created AS user_created, &#34;user&#34;.reset_key AS user_reset_key, &#34;user&#34;.about AS user_about, &#34;user&#34;.activity_streams_email_notifications AS user_activity_streams_email_notifications, &#34;user&#34;.sysadmin AS user_sysadmin, &#34;user&#34;.state AS user_state, &#34;user&#34;.image_url AS user_image_url, &#34;user&#34;.plugin_extras AS user_plugin_extras, &#34;user&#34;.name AS name, &#34;user&#34;.fullname AS fullname, &#34;user&#34;.about AS about, &#34;user&#34;.about AS email, &#34;user&#34;.created AS created, (SELECT count(package.id) AS count_1 
-              FROM package 
-              WHERE package.creator_user_id = &#34;user&#34;.id AND package.state = %(state_1)s AND package.private = false) AS number_created_packages 
-              FROM &#34;user&#34; 
-              WHERE (&#34;user&#34;.name ILIKE %(name_1)s OR &#34;user&#34;.fullname ILIKE %(fullname_1)s OR &#34;user&#34;.email ILIKE %(email_1)s) AND &#34;user&#34;.state != %(state_2)s ORDER BY &#34;user&#34;.name</span></br>
-              <span>users_list_count:0</span></br>
-              <span>page:Page:
-              Collection type:  &lt;class &#39;sqlalchemy.orm.query.Query&#39;&gt;
-              (Current) page:   1
-              First item:       None
-              Last item:        None
-              First page:       None
-              Last page:        None
-              Previous page:    None
-              Next page:        None
-              Items per page:   10
-              Number of items:  0
-              Number of pages:  0
-              </span></br>
-                       <span>page.items:[]</span></br>
-                       <span>g.package_count:5</span></br>
-                       <span>g.search_facets:{&#39;organization&#39;: {&#39;title&#39;: &#39;organization&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;teste-novidade&#39;, &#39;display_name&#39;: &#39;Fundação Teste alguma coisa &#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;citinova&#39;, &#39;display_name&#39;: &#39;Citinova&#39;, &#39;count&#39;: 4}]}, &#39;groups&#39;: {&#39;title&#39;: &#39;groups&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;planejamentoegestao&#39;, &#39;display_name&#39;: &#39;Gestão Pública&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;esportes&#39;, &#39;display_name&#39;: &#39;Esportes&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;cultura&#39;, &#39;display_name&#39;: &#39;Cultura&#39;, &#39;count&#39;: 2}]}, &#39;tags&#39;: {&#39;title&#39;: &#39;tags&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;wi-fi&#39;, &#39;display_name&#39;: &#39;wi-fi&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;teste&#39;, &#39;display_name&#39;: &#39;teste&#39;, &#39;count&#39;: 4}, {&#39;name&#39;: &#39;tecnologia&#39;, &#39;display_name&#39;: &#39;tecnologia&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;novo&#39;, &#39;display_name&#39;: &#39;novo&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;mudança&#39;, &#39;display_name&#39;: &#39;mudança&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;internet&#39;, &#39;display_name&#39;: &#39;internet&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;fortaleza&#39;, &#39;display_name&#39;: &#39;fortaleza&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;dados&#39;, &#39;display_name&#39;: &#39;dados&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;ceará&#39;, &#39;display_name&#39;: &#39;ceará&#39;, &#39;count&#39;: 1}]}, &#39;res_format&#39;: {&#39;title&#39;: &#39;res_format&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;TXT&#39;, &#39;display_name&#39;: &#39;TXT&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;SVG&#39;, &#39;display_name&#39;: &#39;SVG&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;PDF&#39;, &#39;display_name&#39;: &#39;PDF&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;JSON&#39;, &#39;display_name&#39;: &#39;JSON&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;DOCX&#39;, &#39;display_name&#39;: &#39;DOCX&#39;, &#39;count&#39;: 1}]}, &#39;license_id&#39;: {&#39;title&#39;: &#39;license_id&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;other-closed&#39;, &#39;display_name&#39;: &#39;Outra (Não Aberta)&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;gfdl&#39;, &#39;display_name&#39;: &#39;Licença GNU para Documentação Livre&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;cc-zero&#39;, &#39;display_name&#39;: &#39;Creative Commons CCZero&#39;, &#39;count&#39;: 1}]}}</span></br>
-                       <span>g.search_facets.groups:{&#39;title&#39;: &#39;groups&#39;, &#39;items&#39;: [{&#39;name&#39;: &#39;planejamentoegestao&#39;, &#39;display_name&#39;: &#39;Gestão Pública&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;esportes&#39;, &#39;display_name&#39;: &#39;Esportes&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;cultura&#39;, &#39;display_name&#39;: &#39;Cultura&#39;, &#39;count&#39;: 2}]}</span></br>
-                       <span>g.search_facets.groups.items:[{&#39;name&#39;: &#39;planejamentoegestao&#39;, &#39;display_name&#39;: &#39;Gestão Pública&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;esportes&#39;, &#39;display_name&#39;: &#39;Esportes&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;cultura&#39;, &#39;display_name&#39;: &#39;Cultura&#39;, &#39;count&#39;: 2}]</span></br>
-                       <span>g.search_facets.groups.items:[{&#39;name&#39;: &#39;planejamentoegestao&#39;, &#39;display_name&#39;: &#39;Gestão Pública&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;esportes&#39;, &#39;display_name&#39;: &#39;Esportes&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;cultura&#39;, &#39;display_name&#39;: &#39;Cultura&#39;, &#39;count&#39;: 2}]</span></br>
-                       <span>g.search_facets:[{&#39;name&#39;: &#39;wi-fi&#39;, &#39;display_name&#39;: &#39;wi-fi&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;teste&#39;, &#39;display_name&#39;: &#39;teste&#39;, &#39;count&#39;: 4}, {&#39;name&#39;: &#39;tecnologia&#39;, &#39;display_name&#39;: &#39;tecnologia&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;novo&#39;, &#39;display_name&#39;: &#39;novo&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;mudança&#39;, &#39;display_name&#39;: &#39;mudança&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;internet&#39;, &#39;display_name&#39;: &#39;internet&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;fortaleza&#39;, &#39;display_name&#39;: &#39;fortaleza&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;dados&#39;, &#39;display_name&#39;: &#39;dados&#39;, &#39;count&#39;: 1}, {&#39;name&#39;: &#39;ceará&#39;, &#39;display_name&#39;: &#39;ceará&#39;, &#39;count&#39;: 1}]</span></br> -->
            <div class="banner-area">
               <div class="container">
                  <div class="row no-gutters align-items-center">
@@ -646,7 +623,7 @@
                                 </tbody>
                              </table>
                           </div>
-                          <a href="/dataset?q=" class="btn btn-main right">Consultar todos</a>
+                          <a href="./dataset.html" class="btn btn-main right">Consultar todos</a>
                        </div>
                     </div>
                  </div>
@@ -919,10 +896,10 @@
      </footer>
      <!--/Footer  -->
      <!-- scrollToTop -->
-     <a href="#" class="scrollToTop">
+     <span class="scrollToTop" style="cursor:pointer">
       <i class="icofont-swoosh-up bg-yellow"></i><span class=""></span>
       <span class=""></span>
-     </a>
+     </span>
 
 
     <!-- build:js js/main.min.js -->
@@ -934,6 +911,7 @@ JAVASCRIPTS
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/share.js"></script>
     <script src="js/vendor/aos.js"></script>
+    <script src="js/vendor/glowCookies.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/function.js"></script>
     <!-- endbuild -->
