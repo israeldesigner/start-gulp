@@ -38,6 +38,16 @@ jQuery( document ).ready(function() {
     }
 
     submitForm();    
+
+    var current = location.pathname;
+    $('.main-menu ul li a').each(function(){
+        var $this = $(this);
+        console.log($this.attr('href').indexOf(current));
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
  
     $(window).scroll(function(){
       $('.topnav').toggleClass('bg-white navbar-light shadow-sm scrollednav py-0', $(this).scrollTop() > 50);
@@ -67,6 +77,7 @@ jQuery( document ).ready(function() {
 AOS.init({
     duration: 700
 });
+
 
 
 (async () => {
