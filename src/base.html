@@ -391,6 +391,29 @@
                        </div>
                     </div>
                  </div>
+
+                 <table class="table table-responsive-sm table-striped">
+                  <thead class="">
+                      <tr>
+                          <th>Título</th>
+                          <!-- <th class="text-lowercase">Órgão</th>
+                          <th>Grupo</th> -->
+                          <th>Data</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    {%for activity in h.recently_changed_packages_activity_list(5)%}
+                    <tr class="">
+                        <td class="text-blue">
+                          {{activity.data.package.title}}
+                        </td>
+                        <td class="">
+                          <span>{{ h.render_datetime(activity.timestamp,date_format='%d/%m/%Y', with_hours=False)}}</span>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+              </table>                 
               </div>
            </div>
         </div>
