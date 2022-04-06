@@ -5,7 +5,7 @@
 // General
 body {
     overflow-x: hidden;
-    font-size:15px;
+    font-size:16px;
 }
 
 img {
@@ -20,9 +20,6 @@ img {
     position: relative;
     margin-left: -50vw;
     left: 50%;
-}
-a {
-    color: $secondary;
 }
 .c-pointer:hover {
     cursor:pointer;
@@ -531,3 +528,7 @@ ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li:last-child > u
 ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child::before { content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0"; }
 
 // END DOCS FOR DEMO ONLY
+
+.active {
+    color:$black !important;
+}

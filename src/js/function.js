@@ -6,6 +6,12 @@ jQuery( document ).ready(function() {
       $('#loader-wrapper').fadeOut();
     })  
 
+
+
+    $('.fa-facebook').removeClass('bg-blue-darken');
+    $('.fa-facebook').addClass('bg-facebook');
+    $('.fa-facebook').addClass('text-white');
+
     //pre loader
     $('a').on('click', function(e){
       e.preventDefault();
@@ -29,6 +35,22 @@ jQuery( document ).ready(function() {
         }
       });      
     })
+
+    let locationTotal = location.href;
+    let urlExtense = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+    let base_url = window.location.origin;
+    let host = window.location.host;
+    let pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    console.log(host);
+    console.log(base_url);
+    if(urlExtense == ''){
+      console.log("estou na url raiz")
+    }else{
+      console.log("não estou");
+    }
+    console.log(urlExtense);
+    console.log(locationTotal);
     
     //subit form
     const submitForm = () =>{
