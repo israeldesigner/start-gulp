@@ -72,6 +72,7 @@ $colors: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
 (
+"black":      $black,
 "blue":       $blue,
 "indigo":     $indigo,
 "purple":     $purple,
@@ -129,6 +130,7 @@ $white:         $white !default;
      "white":      $white,
      "purple":     $purple,
      "salmon":     $salmon,
+     "blue":       $primary,
      "cyan":       $cyan,
      "gray":       $gray-400,
      "red":        $red,

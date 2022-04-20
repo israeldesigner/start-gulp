@@ -76,9 +76,10 @@
       .footer-top.style-3 .footer-item .footer-inner .footer-content p {
         color: #696969; }
       .footer-top.style-3 .footer-item .footer-inner .footer-content .content ul li a {
-        color: #000000; }
+        color: $black;
+      font-weight: 400; }
         .footer-top.style-3 .footer-item .footer-inner .footer-content .content ul li a:hover {
-          color: #fd4372; }
+          opacity: .7; }
 
   .footer-bottom {
     padding: 6px 0;

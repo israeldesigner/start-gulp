@@ -3121,7 +3121,9 @@
       .banner-section.style-6.crypto .banner-area .content-part .section-header h2, .banner-section.style-6.crypto .banner-area .content-part .section-header p {
         color: #fff; }
       .banner-section.style-6.crypto .banner-area .content-part .section-header form {
-        justify-content: space-between; }
+        justify-content: space-between; 
+        width: 80%;
+      }
       .banner-section.style-6.crypto .banner-area .content-part .section-header p > a {
         color: #f37399; }
       .banner-section.style-6.crypto .banner-area .content-part .section-header form button.lab-btn {
@@ -3876,18 +3878,18 @@
       text-align: center;
       z-index: 1;
       margin-bottom: 50px;
-      background: #00ac5a;
+      background: $yellow;
       border-radius: 100%; }
       .about-section.style-7 .abr-part .section-header .abs-lab-thumb .pluse_1::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb .pluse_1::before, .about-section.style-7 .abr-part .section-header .abs-lab-thumb .pluse_2::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb .pluse_2::before {
-        background: #00ac5a; }
+        background: $yellow; }
       .about-section.style-7 .abr-part .section-header .abs-lab-thumb.pink {
-        background: #f47ca0; }
+        background: $orange; }
         .about-section.style-7 .abr-part .section-header .abs-lab-thumb.pink .pluse_1::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.pink .pluse_1::before, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.pink .pluse_2::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.pink .pluse_2::before {
-          background: #f47ca0; }
+          background: $orange; }
       .about-section.style-7 .abr-part .section-header .abs-lab-thumb.green {
-        background: #00e2f1; }
+        background: $orange; }
         .about-section.style-7 .abr-part .section-header .abs-lab-thumb.green .pluse_1::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.green .pluse_1::before, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.green .pluse_2::after, .about-section.style-7 .abr-part .section-header .abs-lab-thumb.green .pluse_2::before {
-          background: #00e2f1; }
+          background: $orange; }
     .about-section.style-7 .abr-part .section-header h2, .about-section.style-7 .abr-part .section-header p {
       color: #fff; }
     .about-section.style-7 .abr-part .section-header h2 {
@@ -4182,7 +4184,7 @@
   @media (min-width: 992px){
 
     .banner-section.style-6 {
-        padding-top: 60px;
+        padding-top: 140px !important;
     }
 
   }
@@ -4292,6 +4294,33 @@
       width: calc(25%);
       margin-top: 0;
     }
+    
+    
+  }
+  
+  @media (max-width: 768px){
+  
+    .page-header .pageheader-textarea h1 {
+      font-size: 1.75rem !important;
+    }
+
+    .banner-section.style-6.crypto .banner-area .content-part .section-header form{
+      width:auto;
+    }
+
+    .banner-section.style-6 {
+      padding-top: 25px;
+    }
+    
+    
+  }
+
+  @media (max-width: 540px){
+  
+    .page-header .pageheader-textarea h1 {
+      font-size: 1.35rem !important;
+    }
+    
     
   }
   

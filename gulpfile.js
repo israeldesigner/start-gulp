@@ -5,12 +5,15 @@ const useref = require('gulp-useref');
 const gulpif = require('gulp-if');
 const csso = require('gulp-csso');
 const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
 
 gulp.task('sass', function () {
     return gulp
         .src('src/scss/main.scss')
         .pipe(sass())
         .pipe(autoprefixer())
+        .pipe(cleanCSS())
         .pipe(gulp.dest('src/css'))
 });
 

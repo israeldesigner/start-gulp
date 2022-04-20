@@ -140,3 +140,21 @@
       .app-acessibilidade .app-acessibilidadeItens ul li:last-child {
         margin-right: 0px !important; 
       }
+
+      .contrast img{
+        filter: grayscale(100%) contrast(120%);
+      }
+      
+      .contrast small{
+        background: black;
+        color: white;
+      }
+      
+      .contrast i {
+        background: black !important;
+        color: white !important;
+      }
+      
+      .contrast p#bgObjective{
+        background: black !important;
+      }

@@ -41,15 +41,18 @@ jQuery( document ).ready(function() {
     let base_url = window.location.origin;
     let host = window.location.host;
     let pathArray = window.location.pathname.split( '/' );
-    console.log(pathArray);
+
     console.log(host);
     console.log(base_url);
-    if(urlExtense == ''){
+
+
+    console.log(pathArray);
+    if(pathArray[1] == ''){
       console.log("estou na url raiz")
     }else{
       console.log("não estou");
     }
-    console.log(urlExtense);
+
     console.log(locationTotal);
     
     //subit form
@@ -96,9 +99,9 @@ jQuery( document ).ready(function() {
     });
 });
 
-AOS.init({
-    duration: 700
-});
+// AOS.init({
+//     duration: 700
+// });
 
 
 
@@ -141,8 +144,10 @@ axios.interceptors.response.use(function(response) {
 
 var resultElement = document.getElementById('getResult1');
 
+const baseUrlDev = 'https://ckan292-citinova-pladinf-dev.apps.fortaleza.ce.gov.br/api/3/action/';
+
 const baseUrl = 'https://dados.fortaleza.ce.gov.br/api/3/action/';
-const urlDataSet = 'https://dados.fortaleza.ce.gov.br/dataset/'
+const urlDataSet = 'https://dados.fortaleza.ce.gov.br/dataset/';
 
 const appendToDOM = (users) => {
   // const ul = document.querySelector('ul');
@@ -182,7 +187,8 @@ const appendIconDOM = (icons) => {
         temp += `
           <div class='col-lg-2 col-sm-6 col-6 text-center divGrupo-icon'>
             <a href="/group/${icon.name}">
-              <i class="demo-icon ${icon.name}icon-fol fa-3x icon-circle bg-iconGrad-2 text-white mb-2 "></i>
+              <!--<i class="demo-icon ${icon.name}icon-fol fa-3x icon-circle bg-yellow text-black mb-2 "></i>-->
+              <img src="${icon.image_display_url}" alt="${icon.name}"  width="80" />
               <p>${icon.title}</p>
               <b>${icon.package_count}</b>
             </a>
@@ -221,7 +227,7 @@ async function fetchGroups() {
 
   try{
 
-    const response = await axios.get(`${baseUrl}group_list`,{
+    const response = await axios.get(`${baseUrlDev}group_list`,{
       params: {
         all_fields: true
       },
@@ -233,6 +239,7 @@ async function fetchGroups() {
       }      
     })
     .then(response => {
+        console.log(response);
         const data = response.data.result;
         appendIconDOM(data);
     })

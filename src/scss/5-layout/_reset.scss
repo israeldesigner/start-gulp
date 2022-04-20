@@ -3,9 +3,18 @@
 //====================================
 
 // General
+
+.br{
+  border:1px solid red;
+}
+
 body {
     overflow-x: hidden;
     font-size:16px;
+}
+
+.about-section{
+  overflow: unset !important;
 }
 
 img {

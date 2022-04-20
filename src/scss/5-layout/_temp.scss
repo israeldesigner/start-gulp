@@ -2,7 +2,7 @@
 /* Mini reset */
 
 .bg-iconGrad-4{
-    background: linear-gradient(to top, #ff9472, #f2709c);
+    background: linear-gradient(to top, #ffd272, #dfb600);
   }
   
   .bg-iconGrad-2{
@@ -13,7 +13,7 @@
     background: linear-gradient(to top, #7ed500, #00bf8d);
   }
   .bg-iconGrad-1{
-    background: linear-gradient(to top, #f9769d, #bb6df7);
+    background: linear-gradient(to top, #ffb2c9, #bb6df7);
   }
   
   .icon-circle{
@@ -60,26 +60,9 @@
     width: calc(100% - 116px);
     height: 68px;
     margin-bottom: 0px;
+    font-size:16px;
   }
-  
-  .banner-section .divGrupo-icon{
-    text-align:center;
-    margin-bottom: 25px;
-  }
-  
-  .banner-section .divGrupo-icon p{
-    color: #009bfe;
-  }
-  .banner-section .divGrupo-icon i{
-    width: 70px;
-  }
-  
-  .banner-section .divGrupo-icon:hover{
-    opacity: 0.6;
-  }
-  .banner-section .divGrupo-icon a:hover{
-    text-decoration: none !important;
-  }
+
   
   .banner-area .tagsPop a:hover{
     opacity: 0.6;
@@ -112,30 +95,23 @@
     margin-top: 25px;
   }
   
-  .footer-top.style-3 .footer-item .footer-inner .footer-content .content ul li a:hover {
-    color: #00A195;
-  }
-  
-  .footer-top.style-3 .footer-item .footer-inner .footer-content h6{
-    color: #00A195;
-  
-  }
-  
+
   
   /*service  */
   
   .page-header {
     padding: 65px 0 !important;
-    background: linear-gradient(to top, #ffffff, #abf7ff);
+    background: linear-gradient(to top, #ffffff, #feffab);
   }
   
   .page-header .pageheader-textarea h1 {
-    color: #1c4a96;
+    color: $orange;
     font-size: 3.8rem;
   }
   
   .page-header i{
     width: 105px !important;
+    height: 105px !important;
     margin-left: 10px;
   }
   
@@ -259,7 +235,7 @@
   }
   .cardSearch .card-title img{
     text-align: center;
-    width: 175px;
+    width: 85px;
     overflow: hidden;
   }
   
@@ -464,7 +440,7 @@
   
   .footer-top.style-3 .footer-item .footer-inner .footer-content h6{
     margin-top: 10px;
-    color: $orange;
+    color: $black;
   }
 
   .filters{
@@ -506,6 +482,32 @@
   .menu-item-has-children ul li a{
     padding:10px !important;
     font-weight:500 !important;
+}
+
+.s-gruposIcons .divGrupo-icon{
+  text-align:center;
+  margin-bottom: 25px;
+}
+
+.s-gruposIcons .divGrupo-icon p{
+  color: $black;
+  font-weight: 700;
+}
+.s-gruposIcons .divGrupo-icon b{
+  color: $black;
+  font-weight: 700;
+}
+
+.s-gruposIcons .divGrupo-icon i{
+  width: 70px;
+  color: $black;
+}
+
+.s-gruposIcons .divGrupo-icon:hover{
+  opacity: 0.75;
+}
+.s-gruposIcons .divGrupo-icon a:hover{
+  text-decoration: none !important;
 }
 
   

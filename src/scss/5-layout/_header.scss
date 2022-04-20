@@ -14,6 +14,24 @@
   .app-acessibilidade ul li a, .app-acessibilidade .app-acessibilidadeMenu a{
     font-size: smaller;
   }
+
+  .app-acessibilidade{
+    .langButton{
+      button{
+          border: none;
+          background-color: none;
+          background: none;
+          img{
+              @include border-radius(50%);
+              width: 20px;
+              height: 20px;
+          }
+          &:hover{
+              opacity: .75;
+          }
+      }
+  }
+}
   
   /***********/
   
@@ -55,17 +73,7 @@
   .header-section .logo{
     display: inline-flex;
   }
-  
-  .header-section .logo a:first-child{
-    border-right: 1px solid #FFF;
-    padding-right: 3px;
-  }
-  .header-section .logo a:last-child{
-    padding-left: 3px;
-  }
-  
-  
-  
+    
   .app-acessibilidade .app-acessibilidadeItens ul li{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -101,3 +109,7 @@
 
 .crypto .header-area.menu-fixed, .mobile-header {
   background: $yellow !important; }
+
+  .linkPmf-nav, .linkLogo-principal{
+    display: none;
+  }
